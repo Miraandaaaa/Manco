@@ -1,0 +1,37 @@
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    double numero1, numero2, numero3;
+    
+    cout << "Ingrese el primer número: ";
+    cin >> numero1;
+    
+    cout << "Ingrese el segundo número: ";
+    cin >> numero2;
+    
+    cout << "Ingrese el tercer número: ";
+    cin >> numero3;
+    
+    double suma = numero1 + numero2 + numero3;
+    double resta = numero1 - numero2 - numero3;
+    double multiplicacion = numero1 * numero2 * numero3;
+    double division = numero1 / numero2 / numero3;
+    
+    if (numero2 != 0 && numero3 != 0) {
+        double raizCuadrada = sqrt(suma);
+        
+        cout << "Suma: " << suma << endl;
+        cout << "Resta: " << resta << endl;
+        cout << "Multiplicación: " << multiplicacion << endl;
+        cout << "División: " << division << endl;
+        cout << "Raíz cuadrada de la suma: " << raizCuadrada << endl;
+    } else {
+        cout << "No se puede dividir por cero. Asegúrate de que los números 2 y 3 no sean cero." << endl;
+    }
+    
+    return 0;
+}
